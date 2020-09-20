@@ -1,5 +1,13 @@
 body {
   margin: 0;
+  background-color: black;
+}
+::placeholder {
+  color: red;
+}
+a {
+  border
+  color: white;
 }
 h1,h2,h3,h4,h5,h6,p,a {
   font-family: 'Michroma', sans-serif;
@@ -25,12 +33,12 @@ h1,h2,h3,h4,h5,h6,p,a {
   color: white;
   font-size: 13px;
   padding: 1%;
-  transition: all 0.5s ease-in;
+  transition: border 0.5s ease-in;
   border-bottom: 1px solid transparent;
 }
 .navigation a:hover {
   border-color: white;
-  transition: all 0.5s ease-in;
+  transition: border 0.5s ease-in;
 }
 .right-side-nav {
   width: 15%;
@@ -258,7 +266,124 @@ h1,h2,h3,h4,h5,h6,p,a {
   width: 65%;
   height: 100%;
 }
+
+.dev-elements {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.dev-element {
+  width: 80%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: row;
+}
+.dev-image {
+  width: 12%;
+  height: auto;
+  margin: 2%;
+}
+.dev-image img {
+  width: 100%;
+  height: auto;
+}
+.dev-text {
+  width: 60%;
+  align-content: center;
+}
 /* .double-element div {
   width: 100% !important;
   height: 50%;
 } */
+
+/* contact css */
+
+.contact-holder {
+  background-image: url("../images/contactbg.jpg");
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.form-holder {
+  width: 60%;
+  margin: 0 auto;
+  height: 100%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+.double-form-element-holder {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.double-form-element-holder > .form-element-holder {
+  display: flex;
+  width: 48%;
+  flex-direction: column;
+}
+.form-element-holder {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  transition: border 0.5s ease;
+}
+.form-element-holder input, .form-element-holder textarea {
+  background-color: rgba(255,255,255,.2);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: border 0.5s ease;
+}
+.form-element-holder textarea {
+  padding-left: 1%;
+}
+.form-element-holder input {
+  height: 100%;
+  padding-left: 2%;
+}
+.form-element-holder label {
+  margin: 3% 0%;
+  font-size: 20px;
+  color: white;
+}
+.submit-holder {
+  display: flex;
+  justify-content: center;
+}
+.submit-holder input {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  margin: 5% 0%;
+  padding: 2% 5%;
+  font-size: 20px;
+}
+.contact-text {
+  text-align: center;
+  margin: 0;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#hidden_iframe {
+  position: absolute;
+  left: -100%;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}

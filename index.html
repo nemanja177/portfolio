@@ -51,21 +51,7 @@
           <img class="img1" src="images/js.png" alt="js">
           <img class="img2" src="images/html.png" alt="html">
           <img class="img3" src="images/cpp.png" alt="cpp">
-          <!-- <div class="languages-total">
-            <div class="web">
-              <h3>Front-end Development</h3>
-              <hr>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript / JQuery</p>
-            </div>
-            <div class="app">
-              <h3>App Development</h3>
-              <hr>
-              <p>C++</p>
-              <p>Java</p>
-            </div> -->
-          </div>
+        </div>
       </section>
       <section class="vertical-scrolling">
         <div class="work-holder">
@@ -102,15 +88,89 @@
               </div>
             </div>
           </div>
-          <div style="background-color: black;" data-index="2" class="work-segment">
+          <div data-index="2" class="work-segment">
+            <h2>C++</h2>
+            <div class="dev-elements">
+              <div class="dev-element">
+                <div class="dev-image">
+                  <img src="images/cpp.png" alt="cpp">
+                </div>
+                <div class="dev-text">
+                  <h3>Small PackMan Game</h3>
+                  <p>Look-alike PackMan game, but in console </p>
+                </div>
+              </div>
+              <div class="dev-element">
+                <div class="dev-image">
+                  <img src="images/cpp.png" alt="cpp">
+                </div>
+                <div class="dev-text">
+                  <h3>Ship destroyers</h3>
+                  <p>Game of sinking other player's ships</p>
+                  <p>Console game</p>
+                </div>
+              </div>
+              <div class="dev-element">
+                <div class="dev-image">
+                  <img src="images/cpp.png" alt="cpp">
+                </div>
+                <div class="dev-text">
+                  <h3>GTA San Andreas Trainer</h3>
+                  <p>Advanced Trainer for old GTA game</p>
+                  <p>Under development and for personal use only</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div style="background-color: red;" data-index="3" class="work-segment">
+          <div data-index="3" class="work-segment">
+            <h2>Java</h2>
+            <div class="dev-elements">
+              <div class="dev-element">
+                <div class="dev-image">
+                  <img src="images/java.png" alt="java">
+                </div>
+                <div class="dev-text">
+                  <h3>Car Service Application</h3>
+                  <p>Application for car service company, under development</p>
+                </div>
+              </div>
+            </div>
           </div>
           <i class="fa fa-angle-left left-side" onclick="divChanger('left')" aria-hidden="true"></i>
           <i class="fa fa-angle-right right-side" onclick="divChanger('right')" aria-hidden="true"></i>
         </div>
       </section>
       <section class="vertical-scrolling">
+        <div class="contact-holder">
+          <div class="contact-text">
+            <h2>Contact me!</h2>
+            <p>Need a way to contact me or simply send a message?</p>
+            <p>Check the form below!</p>
+          </div>
+          <div class="form-holder">
+            <form id="gform" name="gform" target="hidden_iframe"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSc1xgmQ6dBtqgo1r6xARiQaxkd38Kanm3gPDmK_X-myJKQyhA/formResponse?" method="post">
+              <div class="double-form-element-holder">
+                <div class="form-element-holder">
+                  <label for="entry.556195246">Name</label>
+                  <input type="text" name="entry.556195246" id="entry.556195246" placeholder="">
+                </div>
+                <div class="form-element-holder">
+                  <label for="entry.1808055942">Email</label>
+                  <input type="text" name="entry.1808055942" id="entry.1808055942" placeholder="">
+                </div>
+              </div>
+              <div class="form-element-holder">
+                <label for="entry.160402578">Message</label>
+                <textarea name="entry.160402578" id="entry.160402578" rows="8" cols="80" placeholder=""></textarea>
+              </div>
+              <div class="submit-holder">
+                <input type="submit" name="" value="Send Message" class="submit-button">
+              </div>
+            </form>
+          </div>
+          <iframe name="hidden_iframe" id="hidden_iframe"></iframe>
+        </div>
       </section>
     </div>
     <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
