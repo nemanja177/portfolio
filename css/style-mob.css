@@ -1,0 +1,91 @@
+.left-side-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  top: 100%;
+  left: -100%;
+}
+.main-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.main-text h1 {
+  font-size: 36px;
+}
+.main-text h3 {
+  font-size: 13px;
+}
+.learn-more-holder {
+  position: absolute;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: -5%;
+}
+.about-me {
+  width: 100%;
+  top: 5%;
+}
+.about-holder img {
+  display: none;
+}
+.about-me p {
+  width: 80%;
+}
+.about-me hr {
+  width: 60%;
+}
+.right-side-nav {
+  width: 30%;
+}
+.single-element {
+  width: auto;
+  height: auto;
+}
+.double-element {
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+.dev-element {
+  width: 100%;
+}
+.dev-text h3 {
+  font-size: 13px;
+}
+.dev-text p {
+  font-size: 10px;
+}
+.right-side {
+  right: 1%;
+}
+.contact-text p{
+  font-size: 12px;
+}
+.contact-holder {
+  background-size: auto;
+}
+.submit-holder input {
+  font-size: 15px;
+}
+.double-form-element-holder {
+  height: auto;
+  flex-direction: column;
+}
+.form-element-holder {
+  width: 100% !important;
+}
+/* .navigation {
+  position: static;
+} */
+.navigation a {
+  padding: 3%;
+}
+.nav-toggle {
+  display: block;
+  color: white;
+}

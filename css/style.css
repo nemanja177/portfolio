@@ -17,6 +17,13 @@ h1,h2,h3,h4,h5,h6,p,a {
   color: black !important;
   transition: all 0.5s ease-in;
 }
+.nav-toggle {
+  display: none;
+}
+.active-navbar {
+  left: 0 !important;
+  transition: all 0.5s ease;
+}
 .navigation {
   width: 100%;
   position: fixed;
@@ -42,12 +49,14 @@ h1,h2,h3,h4,h5,h6,p,a {
 }
 .right-side-nav {
   width: 15%;
+  transition: all 0.5s ease;
 }
 .right-side-nav i {
   margin: 0% 2%;
 }
 .left-side-nav {
   display: flex;
+  transition: all 0.5s ease;
   flex-direction: row;
   justify-content: space-around;
   width: 40%;
@@ -342,7 +351,7 @@ h1,h2,h3,h4,h5,h6,p,a {
   background-color: rgba(255,255,255,.2);
   color: white;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: border 0.5s ease;
 }
 .form-element-holder textarea {
@@ -376,6 +385,7 @@ h1,h2,h3,h4,h5,h6,p,a {
   position: absolute;
   top: 25%;
   left: 50%;
+  transition: all 0.5s ease;
   transform: translate(-50%, -50%);
 }
 #hidden_iframe {

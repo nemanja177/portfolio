@@ -2,7 +2,7 @@ let subbmited = false;
 
 function getCurrentWorkingDivIndex() {
   return $(".activeWorkDiv").data('index');
-}
+};
 
 function changeIndex(direction) {
   let currentDivIndex = getCurrentWorkingDivIndex();
@@ -18,7 +18,7 @@ function changeIndex(direction) {
     }
   }
   return currentDivIndex;
-}
+};
 
 function divChanger(direction) {
   let divIndex = changeIndex(direction);
@@ -29,15 +29,7 @@ function divChanger(direction) {
       $(divList[i]).addClass('activeWorkDiv');
     }
   }
-}
-
-// $(function() {
-//   let errorName = false;
-//   let errorEmail = false;
-//   let errorMessage = false;
-//
-//   checkFields();
-// });
+};
 
 function checkFields() {
   let errorName = checkName();
@@ -48,7 +40,7 @@ function checkFields() {
   } else {
     return false;
   }
-}
+};
 
 function checkName() {
   let regex = /^[a-zA-Z]*$/;
@@ -61,7 +53,7 @@ function checkName() {
     $(formName).attr("placeholder", "This field must not be empty or contain special characters!");
     return false;
   }
-}
+};
 function checkEmail() {
   let regex = /^\S+@\S+$/;
   let formEmail = document.getElementById("entry.1808055942");
@@ -74,8 +66,7 @@ function checkEmail() {
     $(formEmail).attr("placeholder", "Email is not valid!");
     return false;
   }
-
-}
+};
 function checkMessage() {
   let formMessage = document.getElementById("entry.160402578");
   if( formMessage.value !== "" && formMessage.value !== null) {
@@ -85,11 +76,13 @@ function checkMessage() {
   $(formMessage).attr("placeholder", "Please enter a message!");
   $(formMessage).css({"border-color": "red", "border-width": "2px"});
   return false;
-}
+};
 
 $("#gform").submit(function() {
   if(checkFields() === true ) {
-    // resetFields();
+    $(this).slideUp('slow');
+    $(".contact-text").css("top", "50%");
+    $(".contact-text").append("<h1>Message delivered!</h1>");
     return true;
   } else {
     // resetFields();
@@ -97,6 +90,10 @@ $("#gform").submit(function() {
     return false;
   }
 });
+
+$(".nav-toggle").click(function() {
+  $(".left-side-nav").toggleClass('active-navbar');
+})
 
 function resetFields() {
   $("#entry.556195246").val() = ""
