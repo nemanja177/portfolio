@@ -50,7 +50,7 @@ function checkName() {
   } else {
     formName.value = "";
     $(formName).css({"border-color": "red", "border-width": "2px"});
-    $(formName).attr("placeholder", "This field must not be empty or contain special characters!");
+    $(formName).attr("placeholder", "Name is not valid!");
     return false;
   }
 };
@@ -86,7 +86,7 @@ $("#gform").submit(function() {
     return true;
   } else {
     // resetFields();
-    alert("Check your form!");
+    $(".contact-text").append("Check your form!");
     return false;
   }
 });
